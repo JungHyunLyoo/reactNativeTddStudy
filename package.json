@@ -6,7 +6,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
-    "test": "jest __tests__/APP-test.js",
+    "test": "jest __tests__/.*-test.js",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -30,7 +30,7 @@
   "jest": {
     "preset": "react-native",
     "setupFiles": [
-      "./setup.js"
+      "./__tests__/setup.js"
     ]
   },
   "detox": {
